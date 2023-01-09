@@ -1,5 +1,7 @@
 # Password Generator
 
+<p><a href="https://nika-chinchaladze.github.io/Password_Generator/">Check Web Application Online</a></p>
+<p><a href="https://www.youtube.com/watch?v=LQEkLAmS76U">Watch Video On My Youtube Channel</a></p>
 
 # App
 ![pc](https://user-images.githubusercontent.com/106172218/211373110-5f4493d0-74fd-4f69-90eb-b63f125d4933.jpg)
