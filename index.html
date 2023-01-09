@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome Icons  -->
+    <script src="https://kit.fontawesome.com/e4767c28d7.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+    <!-- HEADING -->
+    <h3 class="text-center text-light-emphasis mb-3">Password Generator</h3>
+
+    <!-- PASSWORD -->
+    <div class="d-flex justify-content-between align-items-center bg-dark passDiv">
+        <p id="passId" class="fw-bold m-0 p-0">Final Result</p>
+        <button class="bg-dark copyButton"><i class="fa-regular fa-copy bg-dark"></i></button>
+    </div>
+
+    <!-- GENERATOR -->
+    <div class="bg-dark mt-3 generatorDiv">
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="text-light m-0 p-0">Character Length</p>
+            <p class="m-0 p-0 progNumber">0</p>
+        </div>
+        <!-- progress bar -->
+        <div class="slidecontainer mt-3">
+            <input type="range" min="0" max="20" value="0" class="slider" id="myRange">
+        </div>
+
+        <!-- condition list -->
+        <div class="formDiv">
+            <form action="#">
+                <label class="myContainer">Include Uppercase Letters
+                    <input type="checkbox" class="Upper">
+                    <span class="checkmark"></span>
+                </label>
+                  
+                <label class="myContainer">Include Lowercase Letters
+                    <input type="checkbox" class="Lower">
+                    <span class="checkmark"></span>
+                </label>
+                  
+                <label class="myContainer">Include Numbers
+                    <input type="checkbox" class="Number">
+                    <span class="checkmark"></span>
+                </label>
+                  
+                <label class="myContainer">Include Symbols
+                    <input type="checkbox" class="Symbol">
+                    <span class="checkmark"></span>
+                </label>
+            </form>
+        </div>
+        <!-- strength div  -->
+        <div class="bg-black d-flex justify-content-between align-items-center strengthDIv">
+            <p class="m-0 p-0 text-secondary">STRENGTH</p>
+            <div class="d-flex justify-content-end align-items-center">
+                <p id="myStrength" class="m-0 p-0 me-2 text-light text-end fw-bold"></p>
+                <div>
+                    <div class="firstDiv squareDiv d-inline-block"></div>
+                    <div class="secondDiv squareDiv d-inline-block"></div>
+                    <div class="thirdDiv squareDiv d-inline-block"></div>
+                    <div class="fourthDiv squareDiv d-inline-block"></div>
+                </div>
+            </div>
+        </div>
+        <!-- generate button -->
+        <button class="fw-bold d-inline-block text-center mt-3 mb-2 myButton">GENERATE &nbsp;&nbsp;<i class="fa-solid fa-arrow-right fw-bold"></i></button>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Javascript Script -->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
